@@ -9,7 +9,7 @@ dep 'clojure install' do
 	meet {
 		shell  "wget -U 'Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.1.6) Gecko/20070802 SeaMonkey/1.1.4' -O #{@download_dir}/clojure.zip #{@source}", :spinner => true
 		cd @download_dir do
-			shell "unzip clojure.zip -d /Users/minna/projects/", :spinner => true
+			shell "unzip clojure.zip -d #{@project_dir}", :spinner => true
 		end
 	}
 end
