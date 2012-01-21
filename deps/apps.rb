@@ -85,3 +85,35 @@ end
 dep 'Alfred.app' do
 	source 'http://rwc.cachefly.net/alfred_1.0_179.dmg'
 end
+
+dep 'MenuCalendarClock.app' do
+	source 'http://www.objectpark.net/download/MenuCalendarClock-4.1.2.dmg.gz'
+end
+
+dep 'xPad.app' do
+	source 'http://getxpad.com/download/'
+end
+
+dep 'tofu.app' do
+	source 'http://amarsagoo.info/tofu/Tofu.dmg'
+end
+
+dep 'WaveMaker.app' do
+	source 'http://wavemaker.cachefly.net/wavemaker-6.4.4GA.dmg'
+end
+
+dep 'TextWrangler.app' do
+	source 'http://pine.barebones.com/freeware/TextWrangler_3.5.3.dmg'
+end
+
+dep 'GrassGames eBook Reader.app' do
+	source 'http://www.grassgames.com/mac/downloads/eBookReader.zip'
+end
+
+dep 'eWallet.app' do
+	source 'http://www.iliumsoft.com/dl/mac/eWallet-Install.dmg'
+end
+
+dep 'Smilebox.app' do
+	source 'http://www.smilebox.com/download/smilebox/smilebox-mac-installer.dmg'
+end

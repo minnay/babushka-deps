@@ -2,7 +2,8 @@ dep 'clojure install' do
 	@download_dir = File.expand_path '~/Downloads'	
 	@source = 'http://repo1.maven.org/maven2/org/clojure/clojure/1.3.0/clojure-1.3.0.zip'
 	@project_dir = File.expand_path '~/projects/'
-	
+	@version = 'clojure-1.3.0'
+
 	met? {
 		File.directory? @project_dir + '/clojure-1.3.0'	 
 	 }
@@ -13,4 +14,12 @@ dep 'clojure install' do
 		end
 	}
 end
-	
+
+dep 'add clojure to path' do
+	met? {
+	}
+	meet {
+		profile = File.expand_path '~/.bash_profile'
+		shell " echo 'export PATH=$PATH:~/projects/clojure-1.3.0' >> #{profile}"
+	}
+end	
