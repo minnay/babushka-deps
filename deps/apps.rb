@@ -3,7 +3,7 @@ dep 'Adium.app' do
 end
 
 dep 'Buddi.app' do
-	source 'http://sourceforge.net/projects/buddi/files/Buddi%20%28Stable%29/3.4.0.12/Buddi-3.4.0.12.dmg/download'
+	source 'http://sourceforge.net/projects/buddi/files/Buddi%20%28Stable%29/3.4.0.13/Buddi-3.4.0.13.dmg/download'
 end
 
 dep 'Burn.app' do
@@ -43,7 +43,16 @@ dep 'IntelliJ.app' do
 end
 
 dep 'RubyMine.app' do 
-	source 'http://download.jetbrains.com/ruby/RubyMine-3.2.4.dmg'
+	source 'http://download-ln.jetbrains.com/ruby/RubyMine-4.0.1.dmg'
+end
+
+dep 'rubymine remove' do
+	met? {
+		'/Applications/RubyMine\ 3.2.4.app/'.p.exist? 
+	 }
+	meet {
+		shell 'rm -rf /Applications/RubyMine\ 3.2.4.app/'
+	}
 end
 
 dep 'AppCleaner.app' do
@@ -116,4 +125,20 @@ end
 
 dep 'Smilebox.app' do
 	source 'http://www.smilebox.com/download/smilebox/smilebox-mac-installer.dmg'
+end
+
+dep 'QQ.app' do
+	source 'http://dl_dir.qq.com/qqfile/qq/QQforMac/QQ_V1.4.0.dmg'
+end
+
+dep 'KeePassX.app' do
+	source 'http://downloads.sourceforge.net/keepassx/KeePassX-0.4.3.dmg'
+end
+
+dep 'heroku-toolbelt.app' do
+	source 'http://assets.heroku.com/heroku-toolbelt/heroku-toolbelt.pkg'
+end
+
+dep 'PPS.app' do
+	source 'http://download.ppstream.com/mac/pps.dmg'
 end
