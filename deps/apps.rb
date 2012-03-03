@@ -14,6 +14,10 @@ dep 'Evernote.app' do
   source 'http://evernote.s3.amazonaws.com/mac/release/Evernote_93489.dmg'
 end
 
+dep 'Firefox.app' do
+	source 'http://download.mozilla.org/?product=firefox-10.0.2&os=osx&lang=en-GB'
+end
+
 dep 'HandBrake.app' do
   source 'http://handbrake.fr/rotation.php?file=HandBrake-0.9.5-MacOSX.5_GUI_x86_64.dmg'
 end
